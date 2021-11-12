@@ -64,9 +64,9 @@ class Route extends BaseRoute
      *
      * @return Route $this The current Route instance
      */
-    public function value($variable, $default)
+    public function value($variable)
     {
-        $this->setDefault($variable, $default);
+        $this->setDefault($variable, "");
 
         return $this;
     }
